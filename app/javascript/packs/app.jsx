@@ -4,7 +4,7 @@ import Team from './Team';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Team members={[{name: 'Tom'}]}/>,
+    <Team />,
     document.body.appendChild(document.createElement('div')),
   )
 })
