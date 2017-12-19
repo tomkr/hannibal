@@ -1,0 +1,10 @@
+.member-row {
+  display: flex;
+}
+
+.member-name {
+  flex: 0 0 20%;
+  margin: 0;
+  padding: 10px;
+  border-right: 1px solid black;
+}
