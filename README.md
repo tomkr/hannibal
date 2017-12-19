@@ -1,3 +1,3 @@
 # Hannibal
 
-An app to easily and grokkable maintain a planning for a team.
+An app to easily and grokkably maintain a planning for a team.
