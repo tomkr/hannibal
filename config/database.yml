@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  host: 192.168.99.100
+  port: 5432
+
+development:
+  <<: *default
+  database: hannibal_dev
+
+test:
+  <<: *default
+  database: hannibal_test
