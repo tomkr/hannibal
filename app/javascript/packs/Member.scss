@@ -1,10 +1,12 @@
+@import 'colors';
+
 .member-row {
   display: flex;
+  border-bottom: 1px solid $c-grey;
 }
 
 .member-name {
-  flex: 0 0 20%;
+  flex: 0 0 15%;
   margin: 0;
   padding: 10px;
-  border-right: 1px solid black;
 }

@@ -12,7 +12,7 @@ const Team = props => (
 
 Team.defaultProps = {
   members: [
-    { name: 'Tom', assignments: ['#A00', '#A00', '#000', '', ''] }
+    { name: 'Tom', assignments: ['#C33', '#C33', '#666', '', '', ''] }
   ]
 }
 
