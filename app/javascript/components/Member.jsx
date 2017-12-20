@@ -1,6 +1,6 @@
 import React from 'react';
 import Assignment from './Assignment';
-import './Member.scss'
+import '../styles/Member';
 
 const Member = props => (
   <div className="member-row">
