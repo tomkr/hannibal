@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Assignment';
 
-const Assignments = props => (
-  <div className='grid-box' style={{backgroundColor: props.assignment}}></div>
+const Assignments = ({ assignment } )=> (
+  <div className='grid-box' style={{backgroundColor: assignment}}></div>
 )
 
 export default Assignments;

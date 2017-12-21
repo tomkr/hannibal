@@ -1,23 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Member from './Member';
+import { connect } from 'react-redux';
+import { addMember } from '../actions'
+import MemberList from './MemberList';
 
-const Team = props => (
-  <div>
-  {props.members.map((member, index) => ( 
-    <Member key={index} {...member} />
-  ))}
-  </div>
-)
-
-Team.defaultProps = {
-  members: [
-    { name: 'Tom', assignments: ['#C33', '#C33', '#666', '', '', ''] }
-  ]
+const mapStateToProps = state => {
+  return state;
 }
 
-Team.propTypes = {
-  members: PropTypes.array
+const mapDispatchToProps = dispatch => {
+  return {
+    addMember: name => {
+      dispatch(addMember(name))
+    }
+  }
 }
+
+const Team = connect(mapStateToProps, mapDispatchToProps)(MemberList);
 
 export default Team;
